@@ -1,8 +1,10 @@
 package com.example.rxkotlin
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import io.reactivex.rxjava3.subjects.PublishSubject
 import io.reactivex.rxjava3.subjects.Subject
 import java.util.*
@@ -18,6 +20,11 @@ class MainActivity : AppCompatActivity() {
         lambdaExpressionExample()
         inlineFunctionsExample()
         reactiveEvenOdd()
+
+        findViewById<View>(R.id.textView)
+                .setOnClickListener(View.OnClickListener {
+                    val intent = Intent()
+                })
     }
 
 
